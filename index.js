@@ -6,9 +6,10 @@ var app = express()
 /*
 app.use(bodyparser)
 app.use(bodyparser.urlencoded({extended:true}))*/
-/*
-app.use(express.json)
-app.use(bodyparser.urlencoded({extended:true}))*/
+
+
+app.use(bodyparser.urlencoded({extended:false}))
+app.use(express.json())
 
 
 app.use(controller)
